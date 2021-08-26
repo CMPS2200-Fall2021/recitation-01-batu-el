@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "test_linear_search",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest main.py::test_linear_search",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 2
+    },
+    {
+      "name": "test_binary_search",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest main.py::test_binary_search",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 2
+    },
+    {
+      "name": "test_compare_search",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest main.py::test_compare_search",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 2
+    }
+  ]
+}
