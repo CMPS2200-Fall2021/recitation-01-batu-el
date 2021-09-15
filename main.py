@@ -38,7 +38,6 @@ def _binary_search(mylist, key, left, right):
 	  index of key in mylist, or -1 if not present.
 	"""
 	### TODO
-	# check right > 0
 	if right >= left:
         # calculate the mid
 		mid = (left+right) // 2
