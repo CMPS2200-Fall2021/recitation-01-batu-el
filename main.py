@@ -39,25 +39,18 @@ def _binary_search(mylist, key, left, right):
 	"""
 	### TODO
 	# check right > 0
-	if right > 0:
-		# calculate the mid
-	    mid = (left+right+1) // 2
-	    # compare the key with the element in the middle of the list
-	    if mylist[mid] == key: 
-	        return mid
-	    elif mylist[mid] <= key:
-	        result = binary_search(mylist[mid:], key)
-	        if result != -1:
-	            return mid + result
-	        else:
-	            return -1
-	    else: #mylist[mid] <= key
-	        return binary_search(mylist[:mid], key)
+	if right >= left:
+        # calculate the mid
+		mid = (left+right) // 2
+        # compare the key with the element in the middle of the list
+		if mylist[mid] == key: 
+			return mid
+		elif mylist[mid] > key:
+			return _binary_search(mylist, key, left, mid-1)
+		else: #mylist[mid] <= key
+			return _binary_search(mylist, key, mid+1 , right)
 	else:
-	    if mylist[left] == key:
-	        return left
-	    else:
-	        return -1
+		return -1
 
 def test_binary_search():
 	assert binary_search([1,2,3,4,5], 5) == 4
