@@ -92,6 +92,7 @@ although they do not match perfectly, it is clear that the empirica, results fol
   k*O(log_2(n)) = O(k*log_2(n))
   + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting? **TODO: your answer goes here**
   whenever linear search time > sorting time + binary search time
+  
   k*O(n) > Theta(n^2) + k*O(log_2(n))
   -> alpha*k*n > theta(n^2) + beta*k*log_2(n)
   -> alpha*k*n - beta*k*log_2(n) > theta(n^2)
