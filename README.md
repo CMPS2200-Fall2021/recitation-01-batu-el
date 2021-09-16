@@ -82,7 +82,7 @@ For binary search, the best case input value is the element in the middle of the
 |  1000000.000 |   54.697 |    0.016 |   19.93        |   0.000054  |   1245.625            |
 | 10000000.000 |  499.331 |    0.019 |   23.253       |   0.000049  |   1223.8              |
 
-although they do not match perfectly, it is clear that the empirica, results follow trends similar to theorethical findings. For example, linear runtime is close to n*00005, which is directly proportional to n. The binary runtime is approximately (log(base2)(n)/n)*1200. It is useful to note that these relationships are less clear for smaller n because the majority of the runtime is taken by lines with fixed runtime in the algoritm. 
+The empirical results follow trends similar to theorethical findings. For example, linear runtime is close to n*00005, which is directly proportional to n. The binary runtime is approximately (log(base2)(n)/n)*1200. It is important to note that these relationships are less clear for smaller n because the majority of the runtime is taken by lines with fixed runtime in the algoritm. 
 
 
 - [ ] 10. Binary search assumes the input list is already sorted. Assume it takes $\Theta(n^2)$ time to sort a list of length $n$. Suppose you know ahead of time that you will search the same list $k$ times. 
@@ -99,5 +99,5 @@ although they do not match perfectly, it is clear that the empirica, results fol
   -> k* (alpha*n - beta*log_2(n)) > theta(n^2)
   -> k > theta(n^2) / (alpha*n - beta*log_2(n))
   
-  for alpha=beta=1, we have 
-  k > theta(n^2) / (n - log_2(n))  
+  We can take alpha=beta=1, we have 
+  k > theta(n^2) / (n - log_2(n))
