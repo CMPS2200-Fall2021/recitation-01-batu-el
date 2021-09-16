@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "test_linear_search",
-      "setup": "sudo -H pip3 install pytest",
+      "setup": "sudo -H pip3 install pytest; sudo -H pip3 install tabulate",
       "run": "pytest main.py::test_linear_search",
       "input": "",
       "output": "",
@@ -12,7 +12,7 @@
     },
     {
       "name": "test_binary_search",
-      "setup": "sudo -H pip3 install pytest",
+      "setup": "sudo -H pip3 install pytest; sudo -H pip3 install tabulate",
       "run": "pytest main.py::test_binary_search",
       "input": "",
       "output": "",
@@ -22,7 +22,7 @@
     },
     {
       "name": "test_compare_search",
-      "setup": "sudo -H pip3 install pytest",
+      "setup": "sudo -H pip3 install pytest; sudo -H pip3 install tabulate",
       "run": "pytest main.py::test_compare_search",
       "input": "",
       "output": "",
